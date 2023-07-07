@@ -5,6 +5,7 @@ import PermMediaIcon from "@mui/icons-material/PermMedia";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import { Link } from "react-router-dom";
 export default function Share() {
+  const PF = `http://localhost:3000/App_Media/assets/`
   return (
     <div className="share">
       <div className="shareWrapper">
@@ -12,7 +13,7 @@ export default function Share() {
           <div className="shareTop">
             <img
               className="shareProfileImg"
-              src="/assets/person/1.jpeg"
+              src={` ${PF}person/1.jpeg `}
               alt=""
             />
             <input

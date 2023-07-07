@@ -8,14 +8,13 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "./";
+
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route path="/App_Media">
           <Home /> 
         </Route>
         <Route path="/login"> <Login /></Route>

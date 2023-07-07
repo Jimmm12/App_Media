@@ -5,10 +5,11 @@ import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link } from "react-router-dom";
 export default function TopBar() {
+    const PF = `http://localhost:3000/App_Media/assets/`
   return (
     <div className='topbarContaniner'>
         <div className='topbarLeft'>
-            <Link to = "/" style={{textDecoration: "none"}}>
+            <Link to = "/App_Media" style={{textDecoration: "none"}}>
                 <span className='logo'>FaceBook</span>
             </Link>
         </div>
@@ -43,8 +44,8 @@ export default function TopBar() {
                     </span>
                 </div>
             </div>
-            <Link to = "/login" style={{textDecoration: "none"}}>
-                <img src='/assets/person/1.jpeg' alt='' className='topbarImg'/>
+            <Link to = "/Login" style={{textDecoration: "none"}}>
+                <img src={`${PF}person/1.jpeg`} alt='' className='topbarImg'/>
             </Link>
         </div>
     </div>

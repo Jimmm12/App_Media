@@ -4,7 +4,7 @@ import TopBar from "../../components/topbar/TopBar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Rightbar from "../../components/rightbar/Rightbar";
 export default function Profile() {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = `http://localhost:3000/App_Media/assets/`
   return (
     <>
       <TopBar />

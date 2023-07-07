@@ -3,18 +3,18 @@ import { Users } from "../../dummyData";
 import Online from "../online/Online";
 
 export default function Rightbar({ profile }) {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+   const PF = `http://localhost:3000/App_Media/assets/`
   const HomeRightbar = () => {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="bithdayImg" src="assets/gift.png" alt="" />
+          <img className="bithdayImg" src={` ${PF}gift.png`} alt="" />
           <span className="bithdayText">
             {" "}
             Hôm nay sinh nhật của <b>huy dep trai</b> và <b>3 người khác</b>{" "}
           </span>
         </div>
-        <img className="rightbarAd" src="assets/ad.png" alt="" />
+        <img className="rightbarAd" src={` ${PF}ad.png`} alt="" />
         <h4 className="rightbarTitle"> Online Friends</h4>
         <ul className="rightbarFriendList">
           {Users.map((u) => (
@@ -58,7 +58,7 @@ export default function Rightbar({ profile }) {
         <h4 className="rightbarTitle">User Friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src={`${PF}person/1.jpeg`} alt=""/>
+            <img className="rightbarFollowingImg" src={` ${PF}person/1.jpeg`}  alt=""/>
             <span className="rightbarFollowingName">Huy Huy</span>
           </div>
           <div className="rightbarFollowing">
